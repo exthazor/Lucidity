@@ -20,10 +20,10 @@ The project is built adhering to SOLID principles and utilizes various design pa
 
 ### SOLID Principles
 - **Single Responsibility Principle**: Each class and module in the system has a single responsibility and reason to change, exemplified by the separation of services, repositories, models, strategies. Each class and function also has one and only one responsibility.
-- **Open/Closed Principle**: The system is open for extension but closed for modification. For instance, new delivery routing strategies can be added without altering existing code, using the Strategy pattern.
-- **Liskov Substitution Principle**: Interchangeable objects extend a base type, ensuring that derived classes are substitutable for their base class.
+- **Open/Closed Principle**: New delivery routing strategies can be added without altering existing code, using the Strategy pattern.
 - **Interface Segregation Principle**: Interfaces are specific to client requirements, ensuring that implementing classes do not have to depend on interfaces they do not use. 
-- **Dependency Inversion Principle**: High-level modules do not depend on low-level modules but both depend on abstractions. Dependencies are injected through constructors in services and strategies.
+- **Liskov Substitution Principle**: Achieved through the consistent use of the `RouteStrategy` interface, which enables different routing algorithms to be interchanged seamlessly within the RouteService.
+- **Dependency Inversion Principle**: Is demonstrated by the use of field injection in the `RouteService` class, which relies on the OrderService abstraction.
 
 #### Modularity
 The system is highly modular, with clear boundaries defined by packages and services, facilitating easy maintenance and scalability.

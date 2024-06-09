@@ -78,3 +78,13 @@ It employs a priority queue to manage orders by the shortest combined time of tr
     3. **Total Time Calculation**: Sum up all the individual times of the route steps to compute the total delivery time.
 
 - **Outcome**: Produces a `RoutePlan` that details each step of the delivery route and the total time required, ensuring optimal resource utilization and timely deliveries.
+
+## Testing
+
+Input:
+<img width="1132" alt="Screenshot 2024-06-09 at 10 34 20 PM" src="https://github.com/exthazor/Lucidity/assets/25245510/c605539d-cca4-4e5a-8c07-22ec6dba2aea">
+<br/>
+Output: 
+![Screenshot 2024-06-09 at 10 08 18 PM](https://github.com/exthazor/Lucidity/assets/25245510/e3a782a1-ae4f-4806-858f-bc2d5ded7b7a)
+<br/>
+<br/>
